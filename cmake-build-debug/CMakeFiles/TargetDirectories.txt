@@ -1,0 +1,3 @@
+C:/project/ST_Project/NFC_Card/cmake-build-debug/CMakeFiles/NFC_Card.elf.dir
+C:/project/ST_Project/NFC_Card/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/project/ST_Project/NFC_Card/cmake-build-debug/CMakeFiles/rebuild_cache.dir
