@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "print.h"
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -80,6 +80,7 @@ void Error_Handler(void);
 #define RX_GPIO_Port GPIOA
 #define KEY_Pin GPIO_PIN_15
 #define KEY_GPIO_Port GPIOA
+#define KEY_EXTI_IRQn EXTI4_15_IRQn
 
 /* USER CODE BEGIN Private defines */
 

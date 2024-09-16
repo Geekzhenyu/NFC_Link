@@ -35,12 +35,12 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-uint8_t  Image_BW[5000];
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+u8  Image_BW[5000];
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -57,7 +57,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+extern volatile uint8_t  key_flag;
 /* USER CODE END 0 */
 
 /**
@@ -68,7 +68,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+  u8 t=' ';
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -95,6 +95,14 @@ int main(void)
   OLED_GUIInit();
   Paint_NewImage(Image_BW,OLED_W,OLED_H,0,WHITE);
   OLED_Clear(WHITE);
+  // EpdInitFull();
+  // HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_RESET);
+  // HAL_Delay(1000);
+  // EpdDisFull((unsigned char *) nfcBuffer,0);
+  // HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_SET);
+  // EpdDisFull((unsigned char *) nfcBuffer,1);
+  // HAL_Delay(1000);
+  // HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_RESET);
 
   /* USER CODE END 2 */
 
@@ -106,8 +114,41 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     //print("hello world!\r\n");
-    HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-    HAL_Delay(500);
+  if(key_flag == 1)
+  {
+    OLED_GUIInit();
+    OLED_ShowPicture(0,0,200,200,gImage_1,BLACK);
+    OLED_Display(Image_BW);
+    HAL_Delay(1000);
+    OLED_Clear(WHITE);
+
+    key_flag =0;
+  }
+    // OLED_GUIInit();
+    // OLED_ShowChinese(20,0,3,32,BLACK);//电
+    // OLED_ShowChinese(52,0,4,32,BLACK);//子
+    // OLED_ShowChinese(84,0,5,32,BLACK);//纸
+    // OLED_ShowChinese(116,0,6,32,BLACK);//测
+    // OLED_ShowChinese(148,0,7,32,BLACK);//试
+    // OLED_ShowString(60,34,"2022/05/11",16,BLACK);
+    // OLED_ShowString(40,50,"ASCII:",16,BLACK);
+    // OLED_ShowString(100,50,"CODE:",16,BLACK);
+    // OLED_ShowChar(88,50,t,16,BLACK);
+    // OLED_ShowNum(140,50,t,3,16,BLACK);
+    // t++;
+    // if(t>'~')t=' ';
+    // OLED_ShowPicture(14,74,172,64,gImage_2,BLACK);
+    // OLED_ShowString(32,134,"1.54-inch E-paper",16,BLACK);
+    // OLED_ShowString(0,152,"with 200 x 200 resolution",16,BLACK);
+    // OLED_ShowString(8,168,"Zhongjingyuan Electronic",16,BLACK);
+    // OLED_ShowString(24,184,"Technology Co.,Ltd.",16,BLACK);
+    // OLED_DrawRectangle(1,1,200,200,BLACK,0);
+    // OLED_Display(Image_BW);
+    // HAL_Delay(1000);
+    // HAL_Delay(1000);
+    // HAL_Delay(1000);
+    // OLED_Clear(WHITE);
+
   }
   /* USER CODE END 3 */
 }
