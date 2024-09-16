@@ -49,11 +49,11 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(Drivers/BSP/E-Paper Drivers/BSP Core/Inc Drivers/STM32L0xx_HAL_Driver/Inc Drivers/STM32L0xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32L0xx/Include Drivers/CMSIS/Include Drivers/BSP/Components/ST25DV)
+include_directories(Drivers/BSP/E-Paper Core/Inc Drivers/STM32L0xx_HAL_Driver/Inc Drivers/STM32L0xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32L0xx/Include Drivers/CMSIS/Include NFC/App NFC/Target Drivers/BSP/Components/ST25DV Drivers/BSP/NFC04A1)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32L051xx)
 
-file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*" "Drivers/BSP/*.*" "Drivers/BSP/E-Paper/*.*")
+file(GLOB_RECURSE SOURCES "NFC/*.*" "Core/*.*" "Drivers/*.*" "Drivers/BSP/E-Paper/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32L051K8UX_FLASH.ld)
 

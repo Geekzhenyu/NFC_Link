@@ -1,9 +1,9 @@
-/* USER CODE BEGIN Header */
+
 /**
   ******************************************************************************
-  * @file    i2c.h
-  * @brief   This file contains all the function prototypes for
-  *          the i2c.c file
+  * File Name          :  stmicroelectronics_x-cube-nfc4_3_0_0.h
+  * Description        : This file provides code for the configuration
+  *                      of the STMicroelectronics.X-CUBE-NFC4.3.0.0 instances.
   ******************************************************************************
   * @attention
   *
@@ -16,37 +16,20 @@
   *
   ******************************************************************************
   */
-/* USER CODE END Header */
-/* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __I2C_H__
-#define __I2C_H__
 
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef APP_X_CUBE_NFC4_H
+#define APP_X_CUBE_NFC4_H
 #ifdef __cplusplus
-extern "C" {
+ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
-
-/* USER CODE BEGIN Includes */
-
-/* USER CODE END Includes */
-
-extern I2C_HandleTypeDef hi2c1;
-
-/* USER CODE BEGIN Private defines */
-
-/* USER CODE END Private defines */
-
-void MX_I2C1_Init(void);
-
-/* USER CODE BEGIN Prototypes */
-
-/* USER CODE END Prototypes */
-
+/* Exported Functions --------------------------------------------------------*/
+void MX_NFC_Init(void);
+void MX_NFC_Process(void);
 #ifdef __cplusplus
 }
 #endif
-
-#endif /* __I2C_H__ */
+#endif /* __INIT_H */
 

@@ -18,9 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "i2c.h"
 #include "usart.h"
 #include "gpio.h"
+#include "app_x-cube-nfc4.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -403,8 +403,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_I2C1_Init();
   MX_USART1_UART_Init();
+  MX_NFC_Init();
   /* USER CODE BEGIN 2 */
 
   EpdInitFull();
@@ -422,6 +422,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
+  MX_NFC_Process();
     /* USER CODE BEGIN 3 */
       if(key_flag == 1)
     {
