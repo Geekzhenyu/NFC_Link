@@ -24,7 +24,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "oled.h"
+#include "bmp.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -34,7 +35,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+uint8_t  Image_BW[5000];
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -91,6 +92,9 @@ int main(void)
   MX_I2C1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  OLED_GUIInit();
+  Paint_NewImage(Image_BW,OLED_W,OLED_H,0,WHITE);
+  OLED_Clear(WHITE);
 
   /* USER CODE END 2 */
 
@@ -101,9 +105,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    /*print("hello world!\r\n");
+    //print("hello world!\r\n");
     HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-    HAL_Delay(500);*/
+    HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }

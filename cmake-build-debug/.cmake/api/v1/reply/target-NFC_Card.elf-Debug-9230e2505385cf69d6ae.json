@@ -151,6 +151,10 @@
 			[
 				{
 					"backtrace" : 10,
+					"path" : "C:/project/ST_Project/NFC_Card/Drivers/BSP/E-Paper"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/project/ST_Project/NFC_Card/Drivers/BSP"
 				},
 				{
@@ -189,6 +193,7 @@
 			},
 			"sourceIndexes" : 
 			[
+				6,
 				7,
 				8,
 				9,
@@ -197,10 +202,10 @@
 				12,
 				13,
 				14,
-				15,
-				18,
+				17,
 				20,
-				22,
+				85,
+				86,
 				87,
 				88,
 				89,
@@ -216,9 +221,7 @@
 				99,
 				100,
 				101,
-				102,
-				103,
-				104
+				102
 			]
 		},
 		{
@@ -291,6 +294,10 @@
 			[
 				{
 					"backtrace" : 10,
+					"path" : "C:/project/ST_Project/NFC_Card/Drivers/BSP/E-Paper"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/project/ST_Project/NFC_Card/Drivers/BSP"
 				},
 				{
@@ -321,7 +328,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				16
+				15
 			]
 		}
 	],
@@ -390,13 +397,15 @@
 				3,
 				4,
 				5,
-				6,
+				16,
+				18,
 				19,
 				21,
+				22,
 				23,
 				24,
-				25,
-				26,
+				27,
+				28,
 				29,
 				30,
 				31,
@@ -416,8 +425,8 @@
 				45,
 				46,
 				47,
-				48,
 				49,
+				50,
 				51,
 				52,
 				53,
@@ -449,15 +458,14 @@
 				79,
 				80,
 				81,
-				82,
-				83,
-				84
+				82
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
+				6,
 				7,
 				8,
 				9,
@@ -466,10 +474,10 @@
 				12,
 				13,
 				14,
-				15,
-				18,
+				17,
 				20,
-				22,
+				85,
+				86,
 				87,
 				88,
 				89,
@@ -485,33 +493,25 @@
 				99,
 				100,
 				101,
-				102,
-				103,
-				104
+				102
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				16,
-				17,
-				27,
-				28,
-				50,
-				85,
-				86,
-				105
+				15,
+				25,
+				26,
+				48,
+				83,
+				84,
+				103
 			]
 		}
 	],
 	"sources" : 
 	[
-		{
-			"backtrace" : 1,
-			"path" : "Core/Inc/RTE_Components.h",
-			"sourceGroupIndex" : 0
-		},
 		{
 			"backtrace" : 1,
 			"path" : "Core/Inc/gpio.h",
@@ -604,29 +604,23 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Drivers/BSP/Components/ST25DV/LICENSE.txt",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/BSP/Components/ST25DV/st25dv.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Drivers/BSP/Components/ST25DV/st25dv.h",
+			"path" : "Drivers/BSP/E-Paper/bmp.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Drivers/BSP/Components/ST25DV/st25dv_reg.c",
+			"path" : "Drivers/BSP/E-Paper/oled.c",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Drivers/BSP/Components/ST25DV/st25dv_reg.h",
+			"path" : "Drivers/BSP/E-Paper/oled.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/BSP/E-Paper/oledfont.h",
 			"sourceGroupIndex" : 0
 		},
 		{
