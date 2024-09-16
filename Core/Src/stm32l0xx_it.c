@@ -22,7 +22,7 @@
 #include "stm32l0xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "oled.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

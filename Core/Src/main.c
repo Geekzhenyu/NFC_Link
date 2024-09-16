@@ -24,8 +24,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "oled.h"
-#include "bmp.h"
 #include "epd_w21.h"
 /* USER CODE END Includes */
 
@@ -384,7 +382,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-  u8 t=' ';
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -408,9 +406,6 @@ int main(void)
   MX_I2C1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  // OLED_GUIInit();
-  // Paint_NewImage(Image_BW,OLED_W,OLED_H,0,WHITE);
-  // OLED_Clear(WHITE);
 
   EpdInitFull();
   HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_RESET);
@@ -428,45 +423,13 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    //print("hello world!\r\n");
-  if(key_flag == 1)
-  {
+      if(key_flag == 1)
+    {
 
-    EpdDisFull((unsigned char *) nfcBuffer,0);
-    EpdDisFull((unsigned char *) nfcBuffer,1);
-    // OLED_GUIInit();
-    // OLED_ShowPicture(0,0,200,200,camera,BLACK);
-    // OLED_Display(Image_BW);
-    // HAL_Delay(1000);
-    // OLED_Clear(WHITE);
-
-    key_flag =0;
-  }
-    // OLED_GUIInit();
-    // OLED_ShowChinese(20,0,3,32,BLACK);//电
-    // OLED_ShowChinese(52,0,4,32,BLACK);//子
-    // OLED_ShowChinese(84,0,5,32,BLACK);//纸
-    // OLED_ShowChinese(116,0,6,32,BLACK);//测
-    // OLED_ShowChinese(148,0,7,32,BLACK);//试
-    // OLED_ShowString(60,34,"2022/05/11",16,BLACK);
-    // OLED_ShowString(40,50,"ASCII:",16,BLACK);
-    // OLED_ShowString(100,50,"CODE:",16,BLACK);
-    // OLED_ShowChar(88,50,t,16,BLACK);
-    // OLED_ShowNum(140,50,t,3,16,BLACK);
-    // t++;
-    // if(t>'~')t=' ';
-    // OLED_ShowPicture(14,74,172,64,gImage_2,BLACK);
-    // OLED_ShowString(32,134,"1.54-inch E-paper",16,BLACK);
-    // OLED_ShowString(0,152,"with 200 x 200 resolution",16,BLACK);
-    // OLED_ShowString(8,168,"Zhongjingyuan Electronic",16,BLACK);
-    // OLED_ShowString(24,184,"Technology Co.,Ltd.",16,BLACK);
-    // OLED_DrawRectangle(1,1,200,200,BLACK,0);
-    // OLED_Display(Image_BW);
-    // HAL_Delay(1000);
-    // HAL_Delay(1000);
-    // HAL_Delay(1000);
-    // OLED_Clear(WHITE);
-
+      EpdDisFull((unsigned char *) nfcBuffer,0);
+      EpdDisFull((unsigned char *) nfcBuffer,1);
+      key_flag =0;
+    }
   }
   /* USER CODE END 3 */
 }
