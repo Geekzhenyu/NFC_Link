@@ -52,6 +52,9 @@ ST25DV_EN_STATUS MB_mode;
 ST25DV_PASSWD passwd;
 ST25DV_I2CSSO_STATUS i2csso;
 volatile uint8_t GPOActivated = 0;
+
+volatile uint8_t picture__flag =0;
+extern unsigned char nfcBuffer[];
 /* Private functions ---------------------------------------------------------*/
 void MX_NFC4_MAILBOX_Init(void);
 void MX_NFC4_MAILBOX_Process(void);
@@ -84,7 +87,12 @@ void MX_NFC_Init(void)
 void MX_NFC_Process(void)
 {
   /* USER CODE BEGIN NFC4_Library_Process */
-
+  if(picture__flag == 1)
+  {
+    picture__flag =0;
+    EpdDisFull((unsigned char *) nfcBuffer, 1);
+    HAL_Delay(3000);
+  }
   /* USER CODE END NFC4_Library_Process */
 
   MX_NFC4_MAILBOX_Process();
@@ -99,6 +107,9 @@ void MX_NFC4_MAILBOX_Init(void)
 {
   /* Init ST25DV driver */
   while( NFC04A1_NFCTAG_Init(NFC04A1_NFCTAG_INSTANCE) != NFCTAG_OK );
+  /* Energy harvesting activated after Power On Reset */
+  NFC04A1_NFCTAG_WriteEHMode(NFC04A1_NFCTAG_INSTANCE, ST25DV_EH_ACTIVE_AFTER_BOOT);
+  NFC04A1_NFCTAG_SetEHENMode_Dyn(NFC04A1_NFCTAG_INSTANCE);
   /* If not activated, activate Mailbox, as long as MB is ON EEPROM is not available */
   NFC04A1_NFCTAG_ReadMBMode(NFC04A1_NFCTAG_INSTANCE, &MB_mode);
   if( MB_mode == ST25DV_DISABLE )
@@ -135,7 +146,7 @@ void MX_NFC4_MAILBOX_Init(void)
 
 }
 
-extern unsigned char nfcBuffer[];
+
 int bufferIndex = 0;
 /**
 * @brief  Process of the MAILBOX application
@@ -170,9 +181,7 @@ void MX_NFC4_MAILBOX_Process(void)
       if (bufferIndex == 5000)
       {
         bufferIndex = 0;
-
-        EpdDisFull((unsigned char *) nfcBuffer, 1);
-        HAL_Delay(3000);
+        picture__flag =1;
       }
 
     }
