@@ -38,3 +38,14 @@
 183	502	7484164237066193	CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/NFC04A1/nfc04a1.c.obj	a59e3840f2c66ad7
 2	88	7484168336146891	CMakeFiles/NFC_Card.elf.dir/NFC/App/app_x-cube-nfc4.c.obj	1b856dc696da1d54
 89	190	7484168337006890	NFC_Card.elf	3e9f400dafad5cf9
+14	92	7484177658599431	CMakeFiles/NFC_Card.elf.dir/NFC/App/app_x-cube-nfc4.c.obj	1b856dc696da1d54
+2	102	7484177658489441	CMakeFiles/NFC_Card.elf.dir/Core/Src/main.c.obj	8000709b5e45e8a4
+102	206	7484177659487120	NFC_Card.elf	3e9f400dafad5cf9
+15	91	7484178140941188	CMakeFiles/NFC_Card.elf.dir/NFC/App/app_x-cube-nfc4.c.obj	1b856dc696da1d54
+3	93	7484178140821174	CMakeFiles/NFC_Card.elf.dir/Core/Src/main.c.obj	8000709b5e45e8a4
+93	196	7484178141721190	NFC_Card.elf	3e9f400dafad5cf9
+3	1452	7484248067979761	CMakeFiles/NFC_Card.elf.dir/Core/Src/main.c.obj	8000709b5e45e8a4
+460	1456	7484248072556197	CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/oled.c.obj	4f2e99c043524837
+1456	2444	7484248082506245	NFC_Card.elf	3e9f400dafad5cf9
+3	89	7484248613758781	CMakeFiles/NFC_Card.elf.dir/Core/Src/main.c.obj	8000709b5e45e8a4
+89	192	7484248614628780	NFC_Card.elf	3e9f400dafad5cf9

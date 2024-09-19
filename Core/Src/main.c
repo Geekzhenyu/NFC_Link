@@ -727,7 +727,7 @@ int main(void)
 
  // EpdInitFull();
   OLED_GUIInit();
-  Paint_NewImage(nfcBuffer,OLED_W,OLED_H,0,WHITE);
+  Paint_NewImage(camera,OLED_W,OLED_H,0,WHITE);
   OLED_Clear(WHITE);
 
   HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_SET);
@@ -750,7 +750,7 @@ int main(void)
       // EpdDisFull((unsigned char *) camera,0);
       // EpdDisFull((unsigned char *) camera,1);
         OLED_ShowPicture(0,0,200,200,camera,BLACK);
-        OLED_Display(nfcBuffer);
+        OLED_Display(camera);
         HAL_Delay(1000);
         HAL_Delay(1000);
         HAL_Delay(1000);
