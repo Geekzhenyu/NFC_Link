@@ -29,6 +29,9 @@
 #include "nfc04a1_nfctag.h"
 #include <stdio.h>
 #include "epd_w21.h"
+
+#include "oled.h"
+
 /** @defgroup ST25_Nucleo
   * @{
   */
@@ -90,8 +93,11 @@ void MX_NFC_Process(void)
   if(picture__flag == 1)
   {
     picture__flag =0;
-    EpdDisFull((unsigned char *) nfcBuffer, 1);
+   // EpdDisFull((unsigned char *) nfcBuffer, 1);
+    OLED_ShowPicture(0,0,200,200,nfcBuffer,BLACK);
+    OLED_Display(nfcBuffer);
     HAL_Delay(3000);
+    OLED_Clear(WHITE);
   }
   /* USER CODE END NFC4_Library_Process */
 

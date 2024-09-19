@@ -212,14 +212,11 @@
 				19,
 				22,
 				24,
-				26,
+				27,
 				30,
-				32,
 				34,
-				99,
-				100,
-				101,
-				102,
+				36,
+				38,
 				103,
 				104,
 				105,
@@ -234,7 +231,11 @@
 				114,
 				115,
 				116,
-				117
+				117,
+				118,
+				119,
+				120,
+				121
 			]
 		},
 		{
@@ -425,18 +426,17 @@
 				10,
 				23,
 				25,
-				27,
+				26,
 				28,
+				29,
 				31,
-				33,
+				32,
 				35,
-				36,
 				37,
-				38,
+				39,
+				40,
 				41,
 				42,
-				43,
-				44,
 				45,
 				46,
 				47,
@@ -454,10 +454,10 @@
 				59,
 				60,
 				61,
+				62,
 				63,
 				64,
 				65,
-				66,
 				67,
 				68,
 				69,
@@ -488,7 +488,11 @@
 				94,
 				95,
 				96,
-				118
+				97,
+				98,
+				99,
+				100,
+				122
 			]
 		},
 		{
@@ -506,14 +510,11 @@
 				19,
 				22,
 				24,
-				26,
+				27,
 				30,
-				32,
 				34,
-				99,
-				100,
-				101,
-				102,
+				36,
+				38,
 				103,
 				104,
 				105,
@@ -528,7 +529,11 @@
 				114,
 				115,
 				116,
-				117
+				117,
+				118,
+				119,
+				120,
+				121
 			]
 		},
 		{
@@ -537,13 +542,13 @@
 			[
 				20,
 				21,
-				29,
-				39,
-				40,
-				62,
-				97,
-				98,
-				119
+				33,
+				43,
+				44,
+				66,
+				101,
+				102,
+				123
 			]
 		}
 	],
@@ -693,6 +698,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "Drivers/BSP/E-Paper/bmp.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Drivers/BSP/E-Paper/epd_w21.c",
 			"sourceGroupIndex" : 1
@@ -705,6 +715,22 @@
 		{
 			"backtrace" : 1,
 			"path" : "Drivers/BSP/E-Paper/epd_w21_config.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/BSP/E-Paper/oled.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/BSP/E-Paper/oled.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/BSP/E-Paper/oledfont.h",
 			"sourceGroupIndex" : 0
 		},
 		{

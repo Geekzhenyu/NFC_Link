@@ -25,6 +25,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "epd_w21.h"
+#include "oled.h"
+#include "bmp.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -723,11 +725,13 @@ int main(void)
   MX_NFC_Init();
   /* USER CODE BEGIN 2 */
 
-  EpdInitFull();
-  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_RESET);
-  HAL_Delay(1000);
+ // EpdInitFull();
+  OLED_GUIInit();
+  Paint_NewImage(nfcBuffer,OLED_W,OLED_H,0,WHITE);
+  OLED_Clear(WHITE);
+
   HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_SET);
-  HAL_Delay(1000);
+  HAL_Delay(2000);
   HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_RESET);
 
   /* USER CODE END 2 */
@@ -743,8 +747,15 @@ int main(void)
       if(key_flag == 1)
     {
 
-      EpdDisFull((unsigned char *) camera,0);
-      EpdDisFull((unsigned char *) camera,1);
+      // EpdDisFull((unsigned char *) camera,0);
+      // EpdDisFull((unsigned char *) camera,1);
+        OLED_ShowPicture(0,0,200,200,camera,BLACK);
+        OLED_Display(nfcBuffer);
+        HAL_Delay(1000);
+        HAL_Delay(1000);
+        HAL_Delay(1000);
+        OLED_Clear(WHITE);
+
       key_flag =0;
     }
   }
