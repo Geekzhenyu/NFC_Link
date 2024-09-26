@@ -226,7 +226,7 @@ Discarded input sections
  .rodata.gImage_2
                 0x00000000      0x560 CMakeFiles/NFC_Card.elf.dir/Core/Src/main.c.obj
  .rodata.gImage_1
-                0x00000000     0x1388 CMakeFiles/NFC_Card.elf.dir/Core/Src/main.c.obj
+                0x00000000     0x11f8 CMakeFiles/NFC_Card.elf.dir/Core/Src/main.c.obj
  .text          0x00000000        0x0 CMakeFiles/NFC_Card.elf.dir/Core/Src/stm32l0xx_hal_msp.c.obj
  .data          0x00000000        0x0 CMakeFiles/NFC_Card.elf.dir/Core/Src/stm32l0xx_hal_msp.c.obj
  .bss           0x00000000        0x0 CMakeFiles/NFC_Card.elf.dir/Core/Src/stm32l0xx_hal_msp.c.obj
@@ -3449,30 +3449,30 @@ LOAD C:/Software/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-
 LOAD C:/Software/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp\libm.a
 LOAD C:/Software/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x1d028
+.debug_info     0x00000000    0x1d03e
  .debug_info    0x00000000     0x11c2 CMakeFiles/NFC_Card.elf.dir/Core/Src/custom_bus.c.obj
  .debug_info    0x000011c2      0x5bc CMakeFiles/NFC_Card.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000177e      0x85b CMakeFiles/NFC_Card.elf.dir/Core/Src/main.c.obj
- .debug_info    0x00001fd9      0x1b6 CMakeFiles/NFC_Card.elf.dir/Core/Src/stm32l0xx_hal_msp.c.obj
- .debug_info    0x0000218f      0x20c CMakeFiles/NFC_Card.elf.dir/Core/Src/stm32l0xx_it.c.obj
- .debug_info    0x0000239b      0x309 CMakeFiles/NFC_Card.elf.dir/Core/Src/system_stm32l0xx.c.obj
- .debug_info    0x000026a4      0xa01 CMakeFiles/NFC_Card.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x000030a5       0x30 CMakeFiles/NFC_Card.elf.dir/Core/Startup/startup_stm32l051k8ux.s.obj
- .debug_info    0x000030d5     0x3b8b CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/Components/ST25DV/st25dv.c.obj
- .debug_info    0x00006c60     0x45c4 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/Components/ST25DV/st25dv_reg.c.obj
- .debug_info    0x0000b224     0x1628 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/oled.c.obj
- .debug_info    0x0000c84c      0x57d CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/NFC04A1/nfc04a1.c.obj
- .debug_info    0x0000cdc9     0x3163 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/NFC04A1/nfc04a1_nfctag.c.obj
- .debug_info    0x0000ff2c      0x8d2 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c.obj
- .debug_info    0x000107fe      0x995 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj
- .debug_info    0x00011193      0x57f CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c.obj
- .debug_info    0x00011712      0x65e CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj
- .debug_info    0x00011d70     0x409d CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj
- .debug_info    0x00015e0d      0x8a1 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj
- .debug_info    0x000166ae      0xc72 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj
- .debug_info    0x00017320      0x537 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj
- .debug_info    0x00017857     0x4fe1 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj
- .debug_info    0x0001c838      0x7f0 CMakeFiles/NFC_Card.elf.dir/NFC/App/app_x-cube-nfc4.c.obj
+ .debug_info    0x0000177e      0x871 CMakeFiles/NFC_Card.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00001fef      0x1b6 CMakeFiles/NFC_Card.elf.dir/Core/Src/stm32l0xx_hal_msp.c.obj
+ .debug_info    0x000021a5      0x20c CMakeFiles/NFC_Card.elf.dir/Core/Src/stm32l0xx_it.c.obj
+ .debug_info    0x000023b1      0x309 CMakeFiles/NFC_Card.elf.dir/Core/Src/system_stm32l0xx.c.obj
+ .debug_info    0x000026ba      0xa01 CMakeFiles/NFC_Card.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x000030bb       0x30 CMakeFiles/NFC_Card.elf.dir/Core/Startup/startup_stm32l051k8ux.s.obj
+ .debug_info    0x000030eb     0x3b8b CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/Components/ST25DV/st25dv.c.obj
+ .debug_info    0x00006c76     0x45c4 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/Components/ST25DV/st25dv_reg.c.obj
+ .debug_info    0x0000b23a     0x1628 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/oled.c.obj
+ .debug_info    0x0000c862      0x57d CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/NFC04A1/nfc04a1.c.obj
+ .debug_info    0x0000cddf     0x3163 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/NFC04A1/nfc04a1_nfctag.c.obj
+ .debug_info    0x0000ff42      0x8d2 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c.obj
+ .debug_info    0x00010814      0x995 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c.obj
+ .debug_info    0x000111a9      0x57f CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c.obj
+ .debug_info    0x00011728      0x65e CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c.obj
+ .debug_info    0x00011d86     0x409d CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c.obj
+ .debug_info    0x00015e23      0x8a1 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c.obj
+ .debug_info    0x000166c4      0xc72 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c.obj
+ .debug_info    0x00017336      0x537 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c.obj
+ .debug_info    0x0001786d     0x4fe1 CMakeFiles/NFC_Card.elf.dir/Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c.obj
+ .debug_info    0x0001c84e      0x7f0 CMakeFiles/NFC_Card.elf.dir/NFC/App/app_x-cube-nfc4.c.obj
 
 .debug_abbrev   0x00000000     0x302a
  .debug_abbrev  0x00000000      0x304 CMakeFiles/NFC_Card.elf.dir/Core/Src/custom_bus.c.obj
