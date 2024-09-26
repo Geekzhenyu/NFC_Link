@@ -275,7 +275,7 @@ static void EpdW21Update(void)
 {
     EpdW21WriteCMD_p1(0x22, 0xc7);
     EpdW21WriteCMD(0x20);
-    EpdW21WriteCMD(0xff);
+   // EpdW21WriteCMD(0xff);
 }
 
 static void EpdW21UpdatePart(void)
