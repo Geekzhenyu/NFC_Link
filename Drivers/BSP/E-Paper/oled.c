@@ -79,17 +79,17 @@ void OLED_GUIInit(void)
   OLED_WR_DATA8(0x00);
   OLED_WR_DATA8(0x00);   //修改
 
-	//add software start
-	OLED_WR_REG(0x0c);
-	OLED_WR_DATA8(0xd7);
-	OLED_WR_DATA8(0xd6);
-	OLED_WR_DATA8(0x9d);
+	// //add software start
+	// OLED_WR_REG(0x0c);
+	// OLED_WR_DATA8(0xd7);
+	// OLED_WR_DATA8(0xd6);
+	// OLED_WR_DATA8(0x9d);
 
-	OLED_WR_REG(0x3a);
-	OLED_WR_DATA8(0x1a);
-
-	OLED_WR_REG(0x3b);
-	OLED_WR_DATA8(0x08);
+	// OLED_WR_REG(0x3a);
+	// OLED_WR_DATA8(0x1a);
+	//
+	// OLED_WR_REG(0x3b);
+	// OLED_WR_DATA8(0x08);
 
 	
   OLED_WR_REG(0x11); //data entry mode       
@@ -106,8 +106,8 @@ void OLED_GUIInit(void)
   OLED_WR_DATA8(0x00); 
 
   OLED_WR_REG(0x3C); //BorderWavefrom
-  //OLED_WR_DATA8(0x05);
-  OLED_WR_DATA8(0x33);
+  OLED_WR_DATA8(0x05);
+  //OLED_WR_DATA8(0x33);
        
   
 //  OLED_WR_REG(0x21); //  Display update control
@@ -123,47 +123,47 @@ void OLED_GUIInit(void)
   OLED_WR_DATA8(0xC7);
   OLED_WR_DATA8(0x00);
 
-	//add LUT
-	const unsigned char LUTDefault_full[31] = {
-		0x32,    // command
-		0x66,   //machine LUT
-		0x66,
-		0x44,
-		0x66,
-		0xAA,
-		0x11,
-		0x80,
-		0x08,
-		0x11,
-		0x18,
-		0x81,
-		0x18,
-		0x11,
-		0x88,
-		0x11,
-		0x88,
-		0x11,
-		0x88,
-		0x00,
-		0x00,
-		0xFF,
-		0xFF,
-		0xFF,
-		0xFF,
-		0x5F,
-		0xAF,
-		0xFF,
-		0xFF,
-		0x2F,
-		0x00
-};
-	OLED_WR_REG(0x32);
-	for(uint8_t i=1;i<31;i++)
-	OLED_WR_DATA8(LUTDefault_full[i]);
-	//add power on
-	OLED_WR_REG(0x22);
-	OLED_WR_DATA8(0xc0);
-	OLED_WR_DATA8(0x20);
+// 	//add LUT
+// 	const unsigned char LUTDefault_full[31] = {
+// 		0x32,    // command
+// 		0x66,   //machine LUT
+// 		0x66,
+// 		0x44,
+// 		0x66,
+// 		0xAA,
+// 		0x11,
+// 		0x80,
+// 		0x08,
+// 		0x11,
+// 		0x18,
+// 		0x81,
+// 		0x18,
+// 		0x11,
+// 		0x88,
+// 		0x11,
+// 		0x88,
+// 		0x11,
+// 		0x88,
+// 		0x00,
+// 		0x00,
+// 		0xFF,
+// 		0xFF,
+// 		0xFF,
+// 		0xFF,
+// 		0x5F,
+// 		0xAF,
+// 		0xFF,
+// 		0xFF,
+// 		0x2F,
+// 		0x00
+// };
+// 	OLED_WR_REG(0x32);
+// 	for(uint8_t i=1;i<31;i++)
+// 	OLED_WR_DATA8(LUTDefault_full[i]);
+// 	//add power on
+// 	OLED_WR_REG(0x22);
+// 	OLED_WR_DATA8(0xc0);
+// 	OLED_WR_DATA8(0x20);
 	
   Epaper_READBUSY();	
 }

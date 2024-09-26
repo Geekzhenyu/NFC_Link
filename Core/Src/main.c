@@ -725,7 +725,7 @@ int main(void)
   MX_NFC_Init();
   /* USER CODE BEGIN 2 */
 
-// EpdInitFull();
+ //EpdInitFull();
   OLED_GUIInit();
   Paint_NewImage(camera,OLED_W,OLED_H,0,WHITE);
   OLED_Clear(WHITE);
@@ -747,6 +747,7 @@ int main(void)
       if(key_flag == 1)
     {
 
+      // EpdInitFull();
       // EpdDisFull((unsigned char *) camera,0);
       // EpdDisFull((unsigned char *) camera,1);
       OLED_ShowPicture(0,0,200,200,camera,BLACK);
