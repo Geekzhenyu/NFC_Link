@@ -725,14 +725,14 @@ int main(void)
   MX_NFC_Init();
   /* USER CODE BEGIN 2 */
 
- EpdInitFull();
-  // OLED_GUIInit();
-  // Paint_NewImage(camera,OLED_W,OLED_H,0,WHITE);
-  // OLED_Clear(WHITE);
-  //
-  // HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_SET);
-  // HAL_Delay(2000);
-  // HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_RESET);
+// EpdInitFull();
+  OLED_GUIInit();
+  Paint_NewImage(camera,OLED_W,OLED_H,0,WHITE);
+  OLED_Clear(WHITE);
+
+  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_SET);
+  HAL_Delay(2000);
+  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,GPIO_PIN_RESET);
 
   /* USER CODE END 2 */
 
@@ -747,14 +747,14 @@ int main(void)
       if(key_flag == 1)
     {
 
-      EpdDisFull((unsigned char *) camera,0);
-      EpdDisFull((unsigned char *) camera,1);
-      //   OLED_ShowPicture(0,0,200,200,camera,BLACK);
-      //   OLED_Display(camera);
-      //   HAL_Delay(1000);
-      //   HAL_Delay(1000);
-      //   HAL_Delay(1000);
-      //   OLED_Clear(WHITE);
+      // EpdDisFull((unsigned char *) camera,0);
+      // EpdDisFull((unsigned char *) camera,1);
+      OLED_ShowPicture(0,0,200,200,camera,BLACK);
+      OLED_Display(camera);
+      HAL_Delay(1000);
+      HAL_Delay(1000);
+      HAL_Delay(1000);
+      OLED_Clear(WHITE);
 
       key_flag =0;
     }

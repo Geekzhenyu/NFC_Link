@@ -84,8 +84,12 @@ void OLED_GUIInit(void)
 	OLED_WR_DATA8(0xd7);
 	OLED_WR_DATA8(0xd6);
 	OLED_WR_DATA8(0x9d);
-	OLED_WR_DATA8(0x00);
 
+	OLED_WR_REG(0x3a);
+	OLED_WR_DATA8(0x1a);
+
+	OLED_WR_REG(0x3b);
+	OLED_WR_DATA8(0x08);
 
 	
   OLED_WR_REG(0x11); //data entry mode       
@@ -93,8 +97,7 @@ void OLED_GUIInit(void)
 
   OLED_WR_REG(0x44); //set Ram-X address start/end position   
   OLED_WR_DATA8(0x00);
-  //OLED_WR_DATA8(0x18);    //0x0F-->(15+1)*8=128
-	OLED_WR_DATA8(0x24);
+  OLED_WR_DATA8(0x18);    //0x0F-->(15+1)*8=128
 
   OLED_WR_REG(0x45); //set Ram-Y address start/end position          
   OLED_WR_DATA8(0xC7);   //0xF9-->(249+1)=250
