@@ -28,8 +28,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "nfc04a1_nfctag.h"
 #include <stdio.h>
-#include "epd_w21.h"
-
 #include "oled.h"
 
 /** @defgroup ST25_Nucleo

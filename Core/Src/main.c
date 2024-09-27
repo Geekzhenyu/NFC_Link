@@ -24,7 +24,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "epd_w21.h"
 #include "oled.h"
 #include "bmp.h"
 /* USER CODE END Includes */

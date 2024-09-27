@@ -688,84 +688,6 @@ Discarded input sections
                 0x00000000       0x22 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/Components/ST25DV/st25dv_reg.c.obj
  .text.ST25DV_SetLOCKCFG_B0
                 0x00000000       0x4c CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/Components/ST25DV/st25dv_reg.c.obj
- .text          0x00000000        0x0 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data          0x00000000        0x0 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .bss           0x00000000        0x0 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.SpiDelay
-                0x00000000       0x18 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.DriverDelay
-                0x00000000        0x8 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.ReadBusy
-                0x00000000       0x2e CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.SpiWrite
-                0x00000000       0x66 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21Write
-                0x00000000       0x58 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21SetRamArea
-                0x00000000       0x38 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21SetRamPointer
-                0x00000000       0x28 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21DispInit
-                0x00000000       0x60 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21Init
-                0x00000000       0x30 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21WirteLUT
-                0x00000000        0x8 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21WriteCMD_p1
-                0x00000000       0x4c CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21WriteCMD
-                0x00000000       0x34 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21PowerOn
-                0x00000000       0x12 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21Update
-                0x00000000       0x12 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21WriteDispRamMono
-                0x00000000       0x78 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdW21WriteDispRam
-                0x00000000       0x78 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdInitFull
-                0x00000000       0x18 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .text.EpdDisFull
-                0x00000000       0x30 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .rodata.LUTDefault_full
-                0x00000000       0x1f CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .rodata.LUTDefault_part
-                0x00000000       0x1f CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.ramDataEntryMode
-                0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.borderWavefrom
-                0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.gateTime
-                0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.dummyLine
-                0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.boostERFB
-                0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.VCOMVol  0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.SDVol    0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.GDVol    0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.MASequency
-                0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.ramBypass
-                0x00000000        0x2 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.softStart
-                0x00000000        0x4 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .data.GDOControl
-                0x00000000        0x4 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .debug_info    0x00000000      0xe12 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .debug_abbrev  0x00000000      0x24d CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .debug_loclists
-                0x00000000      0x46c CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .debug_aranges
-                0x00000000       0xa8 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .debug_rnglists
-                0x00000000       0x79 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .debug_line    0x00000000      0x5ee CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .debug_str     0x00000000      0x4c9 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .comment       0x00000000       0x46 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .debug_frame   0x00000000      0x1f4 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
- .ARM.attributes
-                0x00000000       0x2c CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
  .text          0x00000000        0x0 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/oled.c.obj
  .data          0x00000000        0x0 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/oled.c.obj
  .bss           0x00000000        0x0 CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/oled.c.obj
@@ -2614,7 +2536,6 @@ LOAD CMakeFiles/NFC_Card.elf.dir/Core/Src/usart.c.obj
 LOAD CMakeFiles/NFC_Card.elf.dir/Core/Startup/startup_stm32l051k8ux.s.obj
 LOAD CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/Components/ST25DV/st25dv.c.obj
 LOAD CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/Components/ST25DV/st25dv_reg.c.obj
-LOAD CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/epd_w21.c.obj
 LOAD CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/E-Paper/oled.c.obj
 LOAD CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/NFC04A1/nfc04a1.c.obj
 LOAD CMakeFiles/NFC_Card.elf.dir/Drivers/BSP/NFC04A1/nfc04a1_nfctag.c.obj
